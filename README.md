@@ -15,6 +15,8 @@ It allows you to create and remove queues defined in your serverless.yml in a lo
 
 The plugin will output the URLs to the queues. They typically have the form `<SQS_ENDPOINT>/queue/queue-name`.
 
+I recommend using this plugin together with [serverless-sqs-client](https://github.com/Nevon/serverless-sqs-client) to transparently switch between AWS SQS and ElasticMQ depending on if you are running in offline mode or note.
+
 # Notes
 
 * This plugin currently does not expose a way to install, start and stop ElasticMQ. My current thinking is that this is something that should be solved outside of `serverless`. If you disagree, open an issue and make your case. I am potentially open to contributions to add support for this.
