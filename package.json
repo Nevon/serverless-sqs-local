@@ -1,0 +1,31 @@
+{
+  "name": "serverless-sqs-local",
+  "version": "1.0.0",
+  "description": "Serverless plugin for integrating with ElasticMQ when invoking functions locally",
+  "main": "src/index.js",
+  "repository": "https://github.com/Nevon/serverless-sqs-local",
+  "author": "Tommy Brunn <tommy.brunn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "npm run test:unit",
+    "test:unit": "NODE_ENV=test jest /__tests__/",
+    "test:unit:watch": "npm run test:unit -- --watch",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.85.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.1",
+    "prettier": "^1.5.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
