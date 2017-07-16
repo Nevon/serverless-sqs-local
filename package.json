@@ -1,6 +1,6 @@
 {
   "name": "serverless-sqs-local",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Serverless plugin for integrating with ElasticMQ when invoking functions locally",
   "main": "src/index.js",
   "repository": "https://github.com/Nevon/serverless-sqs-local",
